@@ -233,9 +233,22 @@ if prompt := st.chat_input("Ask a question..."):
             
             context_chunks = retrieve(prompt, resources)
             context_text = "\n\n".join(context_chunks)
-            system_prompt = f"Instruct: Answer strictly from context.\nContext:\n{context_text}\nQuestion:\n{prompt}\nOutput:\n"
+            system_prompt = f"""Instruct: You are an intelligent assistant. Answer the Question strictly based on the Context. 
+- Give a direct answer.
+- Do not repeat the context.
+- Do not output unrelated "Problem" or "Question" examples found in the text.
+- If the context contains multiple unrelated topics, ignore them.
+
+Context:
+{context_text}
+
+Question:
+{prompt}
+
+Output:
+"""
             
-            stream = resources['llm'](system_prompt, max_tokens=256, stop=["Instruct:", "Question:"], stream=True)
+            stream = resources['llm'](system_prompt, max_tokens=256, stop=["Instruct:", "Question:", "Context:", "Problem"], stream=True)
             
             try:
                 for output in stream:
