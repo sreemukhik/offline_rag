@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+.env
+rag_venv/
+
+# Streamlit
+.streamlit/
+!/.streamlit/config.toml
+
+# Data & Models (Do not commit large files)
+models/*.gguf
+data/*.pdf
+faiss_index.bin
+chunk_metadata.pkl
+
+# IDEs
+.vscode/
+.idea/

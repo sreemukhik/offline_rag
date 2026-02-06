@@ -1,0 +1,9 @@
+@echo off
+echo Killing old processes...
+taskkill /F /IM python.exe /T >nul 2>&1
+echo Cleaning up config...
+del .streamlit\config.toml >nul 2>&1
+echo Starting App on Port 8507...
+echo Open this link in your browser: http://127.0.0.1:8507
+C:\Users\Public\rag_venv\Scripts\streamlit run app.py --server.port 8507 --server.address 127.0.0.1
+pause
