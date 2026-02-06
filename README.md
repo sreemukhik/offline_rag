@@ -1,4 +1,4 @@
-# 🧠 Offline RAG Assistant
+#  Offline RAG Assistant
 
 A secure, privacy-focused **Retrieval-Augmented Generation (RAG)** chatbot that runs entirely offline. Built with **LangChain**, **Streamlit**, and **Phi-2**, this application allows you to chat with your PDF documents without ever sending data to the cloud.
 
@@ -8,7 +8,7 @@ A secure, privacy-focused **Retrieval-Augmented Generation (RAG)** chatbot that 
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 *   **100% Offline**: No API keys, no cloud costs, no internet required.
 *   **Privacy First**: Your sensitive documents stay on your local machine.
@@ -19,7 +19,7 @@ A secure, privacy-focused **Retrieval-Augmented Generation (RAG)** chatbot that 
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 *   **Frontend**: Streamlit
 *   **Orchestration**: LangChain (Community & Text Splitters)
@@ -30,7 +30,7 @@ A secure, privacy-focused **Retrieval-Augmented Generation (RAG)** chatbot that 
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```bash
 offline_rag/
@@ -47,7 +47,7 @@ offline_rag/
 
 ---
 
-## ⚡ Installation Guide
+##  Installation Guide
 
 ### Prerequisites
 *   **Python 3.10** or higher installed.
@@ -130,5 +130,5 @@ Windows has a 260-character path limit.
 
 ---
 
-## 📜 License
+##  License
 This project is licensed under the MIT License.
